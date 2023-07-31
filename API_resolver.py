@@ -71,3 +71,9 @@ for xref in idautils.XrefsTo(addr_api_resolver, 0):
             # Print the address of the resolved API
             print(hex(addr_api_resolver))
             break
+
+
+
+
+
+ref: https://0xtoxin.github.io/malware%20analysis/Lumma-Breakdown/

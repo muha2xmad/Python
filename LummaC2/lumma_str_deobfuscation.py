@@ -61,3 +61,8 @@ for xref in idautils.XrefsTo(decrypt_func, 0):
                     # Set a name for the string at the specified address
                     # The name will be in the format "str_<deobfuscated_string>"
                     idc.set_name(var, "str_" + itm, SN_NOWARN)
+
+
+
+
+ref: https://0xtoxin.github.io/malware%20analysis/Lumma-Breakdown/
