@@ -60,3 +60,9 @@ for xref in idautils.XrefsTo(decrypt_func, 0):
                             seen_ids.append(ext_id)
                             seen_names.append(ext_name)
                             print("[+] Extension Name:", ext_name.title().replace('-', ' '), "| Extension ID:", ext_id)
+
+
+
+
+
+ref: https://0xtoxin.github.io/malware%20analysis/Lumma-Breakdown/
