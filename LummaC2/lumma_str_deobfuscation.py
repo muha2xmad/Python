@@ -4,7 +4,7 @@ import idautils
 
 
 # Address of the decryption function in the binary
-decrypt_func = 0x45DF86
+decrypt_func = 0x001000865C
 
 # A list to store the decrypted and deobfuscated strings
 clean_str = []
@@ -27,7 +27,7 @@ for xref in idautils.XrefsTo(decrypt_func, 0):
         if idc.get_operand_type(addr_push_instr, 0) == idc.o_imm:
 
             # Get the data that is being pushed (string data) based on the immediate operand
-            data = idc.get_operand_value(addr_push_instr, 0)
+            # data = idc.get_operand_value(addr_push_instr, 0)
 
             # Read 100 bytes of data from the specified address 'data'
             data = idc.get_bytes(idc.get_operand_value(addr_push_instr, 0), 100)
@@ -65,4 +65,4 @@ for xref in idautils.XrefsTo(decrypt_func, 0):
 
 
 
-ref: https://0xtoxin.github.io/malware%20analysis/Lumma-Breakdown/
+# ref: https://0xtoxin.github.io/malware%20analysis/Lumma-Breakdown/
