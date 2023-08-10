@@ -54,7 +54,7 @@ def decryption_func(obfuscated_str, key):
 # Address of the decryption function in the binary
 decrypt_func = 
 
-rec4_key = b''
+rc4_key = b''
 
 for xref in idautils.XrefsTo(decrypt_func, 0):
     # Get the address of the decryption function caller
@@ -76,6 +76,6 @@ for xref in idautils.XrefsTo(decrypt_func, 0):
         obfuscated_str = data.split(b'\x00\x00')[0].replace(b'\x00', b'').decode()
         # print(hex(addr_push_instr))
         # print(obfuscated_str)
-        str = decryption_func (obfuscated_str,rec4_key)
+        str = decryption_func (obfuscated_str,rc4_key)
         # print(str)
         set_comment (comment_addr, str)
