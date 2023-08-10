@@ -52,3 +52,5 @@ for i in range(0, len(ptxt_data), 8):
     # Unpack IP address and port number and print them in a specific format
     print("%d.%d.%d.%d:%d" % (ptxt_data[i + 0], ptxt_data[i + 1], ptxt_data[i + 2],
                                ptxt_data[i + 3], struct.unpack('>H', ptxt_data[i + 4:i + 6])[0]))
+
+# ref: OALABS
