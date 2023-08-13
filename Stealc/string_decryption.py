@@ -4,7 +4,7 @@ import idc
 import idautils
 import idaapi, ida_ua
 import base64
-from Crypto.Cipher import ARC4
+
 
 
 # def replace_string(ea, new_str):
@@ -32,7 +32,6 @@ def change_str_ptr_name(addr_decryption_function, str):
             addr_var_str = addr_decryption_function+8
             var_2 = idc.get_operand_value(addr_var_str, 0)
             idc.set_name(var_2, "var_" + str, SN_NOWARN)
-
             return
 
 def set_comment(address, text):
