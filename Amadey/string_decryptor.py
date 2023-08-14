@@ -1,3 +1,10 @@
+# 5effd65eee9e31b8a5a133284face14095903d157202465ed885aa19a0dffa4e
+# 6cc5aeeb3a586cc0ff7d3a4fc136f13ab5b44ece219ef63c77946922fb5c342b
+# 7560bd490edfc33c287b53201060257e3625c6f8fdd6f6cea157309a4186e3ec
+# 260c247fcef9bea24e7b1c96a3299bd2a08acdf3ab4c3abac48a9cb60f456098
+# 2a72b302004c17baf6d69fa1c0559d2e10009643fd06bfeb29f0ab3edc531f23
+# ref: [OALABS](https://research.openanalysis.net/cpp/stl/amadey/loader/config/2022/11/13/amadey.html)
+
 
 # Import necessary modules from IDA Pro
 import idc
@@ -131,4 +138,3 @@ for s,addr in zip(b64_str_list,comm_addr_b64):
 
 
 
-# ref: [OALABS](https://research.openanalysis.net/cpp/stl/amadey/loader/config/2022/11/13/amadey.html)
